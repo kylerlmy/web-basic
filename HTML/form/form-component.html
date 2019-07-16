@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+</main>
+<html>
+
+<head>
+    <meta lang="zh-cn" />
+    <title>Form Component</title>
+</head>
+
+<body>
+    <main>
+        <form>
+            <label for="comment">
+                输入文本框
+            </label>
+            <input type="text" id="comment" name="comment" value="I'm a text field">
+            <br>
+            <label for="email">
+                E-mail 地址框</label>
+            <input type="email" id="email" name="email" multiple>
+            <br>
+            <label for="pwd">
+                密码框 （http 明文传输）</label>
+            <input type="password" id="pwd" name="pwd">
+            <br>
+            <label for="search">
+                搜索框</label>
+            <input type="search" id="search" name="search">
+            <br>
+            <label for=" tel">
+                电话号码栏</label>
+            <input type="tel" id="tel" name="tel">
+            <br>
+            <label for=" url">
+                URL 栏</label>
+            <input type="url" id="url" name="url">
+            <br>
+            <label for="mulitext">多行文本框</label>
+            <textarea id="mulitext" name="mulitext" cols="30" rows="10"></textarea>
+            <br>
+            <label for="groups">选择框</label>
+            <select id="groups" name="groups">
+                <optgroup label="fruits">
+                    <option>Banana</option>
+                    <option selected>Cherry</option>
+                    <option>Lemon</option>
+                </optgroup>
+                <optgroup label="vegetables">
+                    <option>Carrot</option>
+                    <option>Eggplant</option>
+                    <option>Potato</option>
+                </optgroup>
+            </select>
+            <br>
+            <label for="multi">多选择框</label>
+            <select multiple id="multi" name="multi">
+                <option>Banana</option>
+                <option>Cherry</option>
+                <option>Lemon</option>
+            </select>
+            <br>
+            <label for="myFruit">自动补全框</label>
+            <input type="text" name="myFruit" id="myFruit" list="mySuggestion">
+            <datalist id="mySuggestion">
+                <option>Apple</option>
+                <option>Banana</option>
+                <option>Blackberry</option>
+                <option>Blueberry</option>
+                <option>Lemon</option>
+                <option>Lychee</option>
+                <option>Peach</option>
+                <option>Pear</option>
+            </datalist>
+            <br>
+            <label for="carrots">复选框</label>
+            <input type="checkbox" checked id="carrots" name="carrots" value="carrots">
+            <br>
+            <fieldset>
+                <legend>单选按钮</legend>
+                    <ul>
+                        <li>
+                            <label for="soup">Soup</label>
+                            <input type="radio" checked id="soup" name="meal" value="soup">
+                        </li>
+                        <li>
+                            <label for="curry">Curry</label>
+                            <input type="radio" id="curry" name="meal" value="curry">
+                        </li>
+                        <li>
+                            <label for="pizza">Pizza</label>
+                            <input type="radio" id="pizza" name="meal" value="pizza">
+                        </li>
+                    </ul>
+            </fieldset>
+            <br>
+            <label for="age">数字</label>
+            <input type="number" name="age" id="age" min="1" max="10" step="2">
+            <br>
+            <label for="beans">滑块</label>
+            <input type="range" name="beans" id="beans" min="0" max="500" step="10">
+        </form>
+    </main>
+</body>
