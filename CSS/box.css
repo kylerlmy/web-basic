@@ -1,0 +1,53 @@
+/* General styles */
+body {
+    margin: 0;
+  }
+  
+  #wrapper * {
+    padding: 20px;
+    font-size: 20px;
+    border: 20px solid rgba(0,0,0,0.5);
+  }
+  
+  /* specific boxes */
+  
+  #wrapper header, #wrapper footer {
+    background-color: blue;
+    color: white;
+  }
+  
+  #wrapper main {
+    background-color: yellow;
+    margin-top: 50px;
+    padding: 5%;
+    border-width: 60px;
+    width: 60%;
+    height: 20%;
+  }
+  
+  #wrapper header {
+  border: 80%
+  }
+  
+  #wrapper footer {
+  margin-top: 15px;
+  /*如果 main 的 margin-bottom 已设置，该条设置无效--外边距塌陷，
+  较小的margin有效宽度为0，只留下值较大的margin*/
+  }
+
+  div[class$="box"] {
+    width  : 60px;
+    height : 60px;
+    border : 20px solid rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin : 20px 0;
+  
+    background-size    : 140px;
+    background-position: center;
+    background-image   : url('https://mdn.mozillademos.org/files/11947/ff-logo.png');
+    background-color   : gold;
+  }
+  
+  .default     { background-clip: border-box;  }
+  .padding-box { background-clip: padding-box; }
+  .content-box { background-clip: content-box; }

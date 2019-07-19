@@ -5,6 +5,10 @@
 <head>
     <meta lang="zh-cn" />
     <title>Form Component</title>
+
+    <style>
+
+    </style>
 </head>
 
 <body>
@@ -77,20 +81,20 @@
             <br>
             <fieldset>
                 <legend>单选按钮</legend>
-                    <ul>
-                        <li>
-                            <label for="soup">Soup</label>
-                            <input type="radio" checked id="soup" name="meal" value="soup">
-                        </li>
-                        <li>
-                            <label for="curry">Curry</label>
-                            <input type="radio" id="curry" name="meal" value="curry">
-                        </li>
-                        <li>
-                            <label for="pizza">Pizza</label>
-                            <input type="radio" id="pizza" name="meal" value="pizza">
-                        </li>
-                    </ul>
+                <ul>
+                    <li>
+                        <label for="soup">Soup</label>
+                        <input type="radio" checked id="soup" name="meal" value="soup">
+                    </li>
+                    <li>
+                        <label for="curry">Curry</label>
+                        <input type="radio" id="curry" name="meal" value="curry">
+                    </li>
+                    <li>
+                        <label for="pizza">Pizza</label>
+                        <input type="radio" id="pizza" name="meal" value="pizza">
+                    </li>
+                </ul>
             </fieldset>
             <br>
             <label for="age">数字</label>
@@ -98,6 +102,43 @@
             <br>
             <label for="beans">滑块</label>
             <input type="range" name="beans" id="beans" min="0" max="500" step="10">
+            <br>
+            <br>
+            <label for="datetime">本地时间</label>
+            <input type="datetime-local" name="datetime" id="datetime">
+            <br>
+            <br>
+            <label for="month">月</label>
+            <input type="month" name="month" id="month">
+            <br />
+            <br />
+            <label for="time">时间</label>
+            <input type="time" name="time" id="time">
+            <br />
+            <br />
+            <label for="week">星期</label>
+            <input type="week" name="week" id="week">
+            <br />
+            <br />
+            <label for="myDate">date max and min value</label>
+            <input type="date" name="myDate" min="2019-06-01" max="2019-08-31" id="myDate">
+            <br />
+            <br />
+            <label for="color">拾色器</label>
+            <input type="color" name="color" id="color">
+            <br />
+            <br />
+            <label for="file">文件选择器</label>
+            <input type="file" name="file" id="file" accept="image/*" multiple>
+            <br />
+            <br />
+            <label for="progress">进度条</label>
+            <progress id="progress" max="100" value="30">75/100</progress>
+            <br />
+            <br />
+            <label for="dash-board">仪表盘</label>
+            <meter id="dash-board" min="0" max="100" value="34" low="33" high="66" optimum="50">75</meter>
+
         </form>
     </main>
 </body>
