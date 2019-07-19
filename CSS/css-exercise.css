@@ -26,14 +26,14 @@ html {
 /*0011*/
 
 .card header {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
     border-radius: 1.5em 1.5em 0 0;
 }
 
 /*0011*/
 
 .card footer {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
     border-radius: 0 0 1.5em 1.5em;
 }
 
@@ -47,9 +47,9 @@ html {
 /*0022*/
 
 .card header, .card footer {
-    height: 2em;
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
+    /* box-sizing: border-box; */
+    height: 3em;
+    padding: 1em;
 }
 
 /*0022*/
@@ -60,25 +60,27 @@ html {
 
 /*0011*/
 
-.card article{
+.card article {
     background-color: rgba(0, 0, 0, 0.25);
-    height: 15em;
+    height: 12em;
     /* padding:1.5em 0em 1.5em 1.5em; */
-    line-height: 1em;
-    color: white;
-}
-article p {
-    padding: 1.5em;
-    color: white;
-}
-.card h2 {
-    line-height: 1.25em;
-    font-size: 2em;
-    padding-left: 1em;
+    /* line-height: 1em;
+    color: white; */
 }
 
-footer>p {
+article p {
+    padding: 1em;
+    line-height: 1.4em;
+    color: white;
+    font-size: 1.1em;
+}
+
+.card h2 {
     line-height: 1.5em;
-    font-size: 1.5em;
-    padding-left: 1em;
+    font-size: 2em;
+}
+
+footer p {
+    line-height: 2em;
+    font-size: 1.6em;
 }
